@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>Eichitoo ,爱居兔官方网站</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-9">
+    <link rel="icon" href="protected/images/favicon.ico" sizes="32x32" />
+    <script src="protected/js/hm.js"></script>
+ <!--    <script>
+        (function () {
+            var a, b, c, d, e, f, g, h, i, j;
+            a = window.device, window.device = {}, c = window.document.documentElement, j = window.navigator.userAgent.toLowerCase(), device.ios = function () {
+                return device.iphone() || device.ipod() || device.ipad()
+            }, device.iphone = function () {
+                return d("iphone")
+            }, device.ipod = function () {
+                return d("ipod")
+            }, device.ipad = function () {
+                return d("ipad")
+            }, device.android = function () {
+                return d("android")
+            }, device.androidPhone = function () {
+                return device.android() && d("mobile")
+            }, device.androidTablet = function () {
+                return device.android() && !d("mobile")
+            }, device.blackberry = function () {
+                return d("blackberry") || d("bb10") || d("rim")
+            }, device.blackberryPhone = function () {
+                return device.blackberry() && !d("tablet")
+            }, device.blackberryTablet = function () {
+                return device.blackberry() && d("tablet")
+            }, device.windows = function () {
+                return d("windows")
+            }, device.windowsPhone = function () {
+                return device.windows() && d("phone")
+            }, device.windowsTablet = function () {
+                return device.windows() && d("touch") && !device.windowsPhone()
+            }, device.fxos = function () {
+                return (d("(mobile;") || d("(tablet;")) && d("; rv:")
+            }, device.fxosPhone = function () {
+                return device.fxos() && d("mobile")
+            }, device.fxosTablet = function () {
+                return device.fxos() && d("tablet")
+            }, device.meego = function () {
+                return d("meego")
+            }, device.cordova = function () {
+                return window.cordova && "file:" === location.protocol
+            }, device.nodeWebkit = function () {
+                return "object" == typeof window.process
+            }, device.mobile = function () {
+                return device.androidPhone() || device.iphone() || device.ipod() || device.windowsPhone() || device.blackberryPhone() || device.fxosPhone() || device.meego()
+            }, device.tablet = function () {
+                return device.ipad() || device.androidTablet() || device.blackberryTablet() || device.windowsTablet() || device.fxosTablet()
+            }, device.desktop = function () {
+                return !device.tablet() && !device.mobile()
+            }, device.portrait = function () {
+                return window.innerHeight / window.innerWidth > 1
+            }, device.landscape = function () {
+                return window.innerHeight / window.innerWidth < 1
+            }, device.noConflict = function () {
+                return window.device = a, this
+            }, d = function (a) {
+                return -1 !== j.indexOf(a)
+            }, f = function (a) {
+                var b;
+                return b = new RegExp(a, "i"), c.className.match(b)
+            }, b = function (a) {
+                return f(a) ? void 0 : c.className += " " + a
+            }, h = function (a) {
+                return f(a) ? c.className = c.className.replace(a, "") : void 0
+            }, device.ios() ? device.ipad() ? b("ios ipad tablet") : device.iphone() ? b("ios iphone mobile") : device.ipod() && b("ios ipod mobile") : b(device.android() ? device.androidTablet() ? "android tablet" : "android mobile" : device.blackberry() ? device.blackberryTablet() ? "blackberry tablet" : "blackberry mobile" : device.windows() ? device.windowsTablet() ? "windows tablet" : device.windowsPhone() ? "windows mobile" : "desktop" : device.fxos() ? device.fxosTablet() ? "fxos tablet" : "fxos mobile" : device.meego() ? "meego mobile" : device.nodeWebkit() ? "node-webkit" : "desktop"), device.cordova() && b("cordova"), e = function () {
+                return device.landscape() ? (h("portrait"), b("landscape")) : (h("landscape"), b("portrait"))
+            }, i = "onorientationchange"in window, g = i ? "orientationchange" : "resize", window.addEventListener ? window.addEventListener(g, e, !1) : window.attachEvent ? window.attachEvent(g, e) : window[g] = e, e()
+        }).call(this);
+    </script> -->
+
+    <script>
+        if (device.tablet()) {
+            document.write('<meta name="viewport" content="width=1024, user-scalable=no">');
+        } else if (device.landscape() && device.iphone() || device.landscape() && device.androidPhone()) {
+            document.write('<meta name="viewport" content="width=480, user-scalable=no">');
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">');
+        }
+
+        // if(device.ipad() && device.portrait()){
+        //   console.log(1)
+        //   document.write('<meta name="viewport" content="width=768, user-scalable=no">');
+        // }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9aac79715413f0ab5fc2bb5cbc5b63f7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Bootstrap -->
+    <link href="protected/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="protected/css/style.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://www.eichitoo.com/template/eichitoo/css/style-ie.css">
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".navbar-scroll">
+<!-- 添加横屏时遮罩层 -->
+<!-- <div class="trasfrm ds768">
+    <div class="padArow"></div>
+    <div class="iconPad_1">
+        <div class="iconpad_2"></div>
+    </div>
+    <div class="iconPad_1 trmoct">
+        <div class="iconpad_2"></div>
+    </div> -->
+</div>
+<!--app loading-->
+<div id="app-loading" class="app-loading"></div>
+<nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <ul class="nav-ie">
+            <li class="active"><a href="javascript:;"><span
+                    class="Englishtitle">HOME</span>
+                <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>首页</span></a></li>
+            <li><a href="javascript:;"><span
+                    class="Englishtitle">CAMPAIGNS</span>
+                <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>时尚大片</span></a></li>
+            <li><a href="javascript:;"><span class="Englishtitle">COLLECTION</span>
+                <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>时装</span></a></li>
+            <li id="logo"><img class="logo" src="protected/images/eichitoo-logo.png"
+                               onclick="window.location.href= &#39;/eichitoo/index&#39;;return false"></li>
+            <li><a href="javascript:;"><span class="Englishtitle">SHARE</span>
+                <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>分享</span></a></li>
+            <li><a href="javascript:;"><span class="Englishtitle">NEWS</span>
+                <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>品牌动态</span></a></li>
+            <li><a href="javascript:;"><span class="Englishtitle">CONTACT</span>
+                <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>联系我们</span></a></li>
+        </ul>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand visible-xs" href="javascript:;"><img class="logo"
+                                                                                  src="protected/images/mobile-logo.png"
+                                                                                  onclick="window.location.href= &#39;/eichitoo/index&#39;;return false"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-scrol">
+            <ul class="nav navbar-nav navigation">
+                <li class="active"><a href="javascript:;" toelem="#carousel-banner"><span
+                        class="Englishtitle">HOME</span>
+                    <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>首页</span></a></li>
+                <li><a href="javascript:;" toelem="#campaigns"><span
+                        class="Englishtitle">CAMPAIGNS</span>
+                    <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>时尚大片</span></a></li>
+                <li><a href="javascript:;" toelem="#collection"><span
+                        class="Englishtitle">COLLECTION</span>
+                    <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>时装</span></a></li>
+                <li id="logo"><img class="logo" src="protected/images/eichitoo-logo.png"
+                                   onclick="window.location.href= &#39;/eichitoo/index&#39;;return false"></li>
+                <li><a href="javascript:;" toelem="#share"><span class="Englishtitle">SHARE</span>
+                    <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>分享</span></a></li>
+                <li><a href="javascript:;" toelem="#news"><span class="Englishtitle">NEWS</span>
+                    <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>品牌动态</span></a></li>
+                <li><a href="javascript:;" toelem="#contact"><span class="Englishtitle">CONTACT</span>
+                    <span class="Chinesetitle"><i class="glyphicon glyphicon-chevron-down"></i>联系我们</span></a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+<div id="carousel-banner" class="carousel slide navtop H760-banner" data-ride="carousel"
+     style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="width: 450px;">
+        <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-banner" data-slide-to="1" class=""></li>
+        <li data-target="#carousel-banner" data-slide-to="2" class=""></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <a href="javascript:;"><img src="protected/images/banner01c.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="javascript:;"><img src="protected/images/banner02c.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="javascript:;"><img src="protected/images/banner03c.jpg" alt=""></a>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control left" href="#carousel-banner" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a> 
+    <a class="carousel-control right" href="#carousel-banner" role="button"
+            data-slide="next"> 
+            <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span>
+</a>
+</div>
+
+<section class="campaigns" id="campaigns">
+    <h2 class="title">不同以往的固步自封，是美在当下的时尚态度，在潮流中信手拈来，不出位，不张扬，毫无侵略性的美。</h2>
+
+    <div class="campaigns_pic">
+        <span class="campaigns_pic_style1 camLeft grow"><a href="http://www.echtoo.com/eichitoo/campaigns_pic"><img
+                class="lazy" data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/campaigns-pic1.jpg"
+                alt="" src="protected/images/campaigns-pic1.jpg" style="display: inline;"></a></span> <span
+            class="campaigns_pic_style2 grow"><a href="http://www.echtoo.com/eichitoo/campaigns_pic"><img class="lazy"
+                                                                                                          data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/campaigns-pic2.jpg"
+                                                                                                          alt=""
+                                                                                                          src="protected/images/campaigns-pic2.jpg"
+                                                                                                          style="display: inline;"></a></span>
+        <span class="campaigns_pic_style3 grow"><a href="http://www.echtoo.com/eichitoo/campaigns_pic"><img class="lazy"
+                                                                                                            data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/campaigns-pic3_.jpg"
+                                                                                                            alt=""
+                                                                                                            src="protected/images/campaigns-pic3_.jpg"
+                                                                                                            style="display: inline;"></a></span>
+        <span class="campaigns_pic_styleApp3 grow"><a href="http://www.echtoo.com/eichitoo/campaigns_pic"><img
+                class="lazy" data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/campaigns-pic3.jpg"
+                alt=""
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"></a></span>
+        <span class="campaigns_pic_style1 camRight grow"><a href="http://www.echtoo.com/eichitoo/campaigns_pic"><img
+                class="lazy" data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/campaigns-pic4.jpg"
+                alt="" src="protected/images/campaigns-pic4.jpg" style="display: inline;"></a></span> <span
+            class="campaigns_pic_style2 grow"><a href="http://www.echtoo.com/eichitoo/campaigns_pic"><img class="lazy"
+                                                                                                          data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/campaigns-pic5.jpg"
+                                                                                                          alt=""
+                                                                                                          src="protected/images/campaigns-pic5.jpg"
+                                                                                                          style="display: inline;"></a></span>
+        <!-- <div class="sly campaigns-sly">
+          <ul class="clearfix">
+            <li><a href="campaigns-video" target="_blank" class="campaigns_pic_style"><img src="protected/images/temp/campaigns-pic1.jpg" alt=""></a></li>
+            <li><a href="campaigns-video" target="_blank" class="campaigns_pic_style"><img src="protected/images/temp/campaigns-pic2.jpg" alt=""></a></li>
+            <li><a href="campaigns-video" target="_blank" class="campaigns_pic_style"><img src="protected/images/temp/campaigns-pic3.jpg" alt=""></a></li>
+            <li><a href="campaigns-video" target="_blank" class="campaigns_pic_style"><img src="protected/images/temp/campaigns-pic4.jpg" alt=""></a></li>
+            <li><a href="campaigns-video" target="_blank" class="campaigns_pic_style"><img src="protected/images/temp/campaigns-pic5.jpg" alt=""></a></li>
+            <li><a href="campaigns-video" target="_blank" class="campaigns_pic_style"><img src="protected/images/temp/campaigns-pic5.jpg" alt=""></a></li>
+          </ul>
+        </div>        
+        <div class="campaigns-btn-prev"><span class="glyphicon glyphicon-chevron-left"></span></div>
+        <div class="campaigns-btn-next"><span class="glyphicon glyphicon-chevron-right"></span></div> -->
+
+    </div>
+    <div class="campList">
+        <ul class="clearfix">
+            <li><a href="http://www.echtoo.com/eichitoo/campaigns_video" target="_blank"
+                   class="campaigns_pic_style"><img src="protected/images/campaigns-pic1.jpg" alt=""></a></li>
+            <li><a href="http://www.echtoo.com/eichitoo/campaigns_video" target="_blank"
+                   class="campaigns_pic_style"><img src="protected/images/campaigns-pic2.jpg" alt=""></a></li>
+            <li><a href="http://www.echtoo.com/eichitoo/campaigns_video" target="_blank"
+                   class="campaigns_pic_style"><img src="protected/images/campaigns-pic3.jpg" alt=""></a></li>
+            <li><a href="http://www.echtoo.com/eichitoo/campaigns_video" target="_blank"
+                   class="campaigns_pic_style"><img src="protected/images/campaigns-pic4.jpg" alt=""></a></li>
+            <li><a href="http://www.echtoo.com/eichitoo/campaigns_video" target="_blank"
+                   class="campaigns_pic_style"><img src="protected/images/campaigns-pic5.jpg" alt=""></a></li>
+        </ul>
+    </div>
+</section>
+
+<section class="collection" id="collection">
+    <div class="collection_wrap clearfix">
+        <h2 class="title"></h2>
+
+        <div class="collection_pic">
+            <a href="http://www.echtoo.com/eichitoo/proDetails_office"> <img class="lazy"
+                                                                             data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/collection-pic1.jpg"
+                                                                             alt=""
+                                                                             src="protected/images/collection-pic1.jpg"
+                                                                             style="display: block;"> <span
+                    class="collection_pic_text"> <em>OFFICE</em><i>AUTUMN
+                014 FASHION SHOW</i>
+			</span> <span class="collection_hovbg"></span>
+            </a>
+        </div>
+        <div class="collection_pic">
+            <a href="http://www.echtoo.com/eichitoo/proDetails_life"> <img class="lazy"
+                                                                           data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/collection-pic2.jpg"
+                                                                           alt=""
+                                                                           src="protected/images/collection-pic2.jpg"
+                                                                           style="display: block;"> <span
+                    class="collection_pic_text Textalign"> <em>LIFE</em><i>AUTUMN
+                014 FASHION SHOW</i>
+			</span> <span class="collection_hovbg"></span>
+            </a>
+        </div>
+        <!-- 增加 -->
+        <div class="collection_pic">
+            <a href="http://www.echtoo.com/eichitoo/proDetails_fashion">
+                <img class="lazy"
+                     data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/collection-pic3.jpg" alt=""
+                     src="protected/images/collection-pic3.jpg" style="display: block;">
+                <span class="collection_pic_text"> <em>FASHION</em><i>AUTUMN 014 FASHION SHOW</i> </span>
+                <span class="collection_hovbg"></span>
+            </a>
+        </div>
+        <!-- 增加结束 -->
+        <span class="collecTit"></span> <span class="collecBottom"></span>
+    </div>
+</section>
+
+<section class="share" id="share">
+    <div class="share_pic">
+        <a href="http://www.echtoo.com/eichitoo/products_pic" class="share_pic_wrap"> <img class="lazy share_pic_style"
+                                                                                           data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/share-pic1.jpg"
+                                                                                           alt=""
+                                                                                           src="protected/images/share-pic1.jpg"
+                                                                                           style="display: inline;"> <span
+                class="share_pic_info"> <span class="share_pic_text"><em>潮流前沿</em><i>Foreword
+            trend</i></span> <!--span class="share_pic_con">时尚女装搭配一步一步的建立自己的着装风格,不一定流行但一定要 一步一步的建立自己的着装风格, 适合 实际上,能够给我们留下深刻印象的穿衣高手,都是创造了自己...</span-->
+		</span> <span class="share_pic_mask"></span> <span class="share_pic_bord"></span>
+        </a> <a href="http://www.echtoo.com/eichitoo/products" class="share_pic_wrap"> <img class="lazy share_pic_style"
+                                                                                            data-original="http://www.eichitoo.com/template/eichitoo/protected/images/temp/share-pic2.jpg"
+                                                                                            alt=""
+                                                                                            src="protected/images/share-pic2.jpg"
+                                                                                            style="display: inline;"> <span
+            class="share_pic_info"> <span class="share_pic_text"><em>时尚搭配</em><i>Fashion
+        with</i></span> <!--span class="share_pic_con">时尚女装搭配一步一步的建立自己的着装风格,不一定流行但一定要 一步一步的建立自己的着装风格, 适合 实际上,能够给我们留下深刻印象的穿衣高手,都是创造了自己...</span-->
+		</span> <span class="share_pic_mask"></span> <span class="share_pic_bord"></span>
+    </a>
+
+    </div>
+</section>
+
+<section class="news" id="news">
+    <img class="lazy newsbg" data-original="http://www.eichitoo.com/template/eichitoo/protected/images/section-bg2.jpg" alt=""
+         src="protected/images/section-bg2.jpg">
+    <h2 class="title"></h2>
+
+    <div id="carousel-news" class="carousel slide carouse-news" data-ride="carousel"
+         style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="http://www.echtoo.com/eichitoo/newsDetails/detail/52">
+                    <img src="protected/images/57cd25c661bf5.jpg" alt="">
+
+                    <div class="carousel-caption">
+                        <span class="carousel-news-data"><b>1</b><sup> /<i>1</i></sup></span>
+
+                        <h3 class="carousel-news-title">越清新越漂亮：素颜女神王丽坤藏起A4腰拍美装照</h3>
+
+                        <p class="carousel-news-summary">
+                            3月不减肥，整年徒伤悲……夏天还没到，身材标准就从反手摸肚脐、锁骨放硬币，变成A4腰了，其大概就是说，腰杆如一张A4纸般大。</p>
+
+                        <p>More</p>
+                    </div>
+                </a>
+            </div>
+            <!--
+<div class="item active">
+<a href="newsDetails">
+<img src="http://www.eichitoo.com/template/eichitoo/protected/images/temp/news-pic1.jpg" alt="" />
+<div class="carousel-caption">
+<span class="carousel-news-data"><b>1</b><sup> /<i>8</i></sup></span>
+<h3 class="carousel-news-title">Eichitoo 2014秋季时尚大片...</h3>
+<p class="carousel-news-summary">爱，是一件风衣的温暖<br/>也是一声秋凉的问候<br/>行走在摩登的时尚之巅<br/>品味生活的细枝末节<br/>在快节奏后留给自己一段慢下来的时光<br/>在阳光正好的街头<br/>剪影写字楼忙碌之外宁静的浪漫</p>				<p>More</p>
+
+</div>
+</a>
+</div>
+
+<div class="item">
+<a href="newsDetails2">
+<img src="http://www.eichitoo.com/template/eichitoo/protected/images/temp/news-pic2.jpg" alt="" />
+<div class="carousel-caption">
+<span class="carousel-news-data"><b>2</b><sup> /<i>8</i></sup></span>
+<h3 class="carousel-news-title">Eichitoo  让设计回归</h3>
+<p class="carousel-news-summary">从日韩到欧美，从波西米亚到街头……<br/>爱居兔相信<br/>无论多么精妙的设计都要为穿着者服务<br/>让设计回到生活的本源<br/>才能为女性制作最贴心的美装</p>
+<p>More</p>
+
+</div>
+</a>
+</div>
+
+<div class="item">
+<a href="newsDetails3">
+<img src="http://www.eichitoo.com/template/eichitoo/protected/images/temp/news-pic3.jpg" alt="" />
+<div class="carousel-caption">
+<span class="carousel-news-data"><b>3</b><sup> /<i>8</i></sup></span>
+<h3 class="carousel-news-title">秋日轻奢简约风  Eichitoo质感呈现</h3>
+<p class="carousel-news-summary">年轻的奢华<br/>是带着活力的优雅<br/>也是乐享生活的淡然自若<br/>宝石印花的复古衣着<br/>彰显女性窈窕曼妙的绰绰身形<br/></p>
+        <p>More</p>
+</div>
+</a>
+</div>
+
+<div class="item">
+<a href="newsDetails4">
+<img src="http://www.eichitoo.com/template/eichitoo/protected/images/temp/news-pic4.jpg" alt="" />
+<div class="carousel-caption">
+<span class="carousel-news-data"><b>4</b><sup> /<i>8</i></sup></span>
+<h3 class="carousel-news-title">炫目一“夏”，EICHITOO服饰...</h3>
+<p class="carousel-news-summary">放眼今夏服装市场，品牌多样，款式多变，服装面料更是五花八门，日新月异。但从总体上来看，雪纺、纯棉、牛仔面料都是今夏流</p>
+       <p>More</p>
+</div>
+</a>
+</div>
+
+
+<div class="item">
+<a href="newsDetails5">
+<img src="http://www.eichitoo.com/template/eichitoo/protected/images/temp/news-pic5.jpg" alt="" />
+<div class="carousel-caption">
+<span class="carousel-news-data"><b>5</b><sup> /<i>8</i></sup></span>
+<h3 class="carousel-news-title">旅途有你，EICHITOO带你打...</h3>
+<p class="carousel-news-summary">带上梦想，鼓起说走就走的勇气，在这个明媚夏日，去向往已久的远方，唤起心中久违的感动。由一线当红明星、潮流女王林依晨和国际明星金汎颠覆以往</p>
+        <p>More</p>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="newsDetails6">
+<img src="http://www.eichitoo.com/template/eichitoo/protected/images/temp/news-pic6.jpg" alt="" />
+<div class="carousel-caption">
+<span class="carousel-news-data"><b>6</b><sup> /<i>8</i></sup></span>
+<h3 class="carousel-news-title">EICHITOO美妙心情show，定格青春...</h3>
+<p class="carousel-news-summary">时尚服饰EICHITOO，为都市潮女们主办了一声“美妙心情SHOW”活动。只要网友关注@爱居兔EICHITOO官方微博，或登陆http://event.weibo.com/865874</p>
+       <p>More</p>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="newsDetails7">
+<img src="http://www.eichitoo.com/template/eichitoo/protected/images/temp/news-pic7.jpg" alt="" />
+<div class="carousel-caption">
+<span class="carousel-news-data"><b>7</b><sup> /<i>8</i></sup></span>
+<h3 class="carousel-news-title">EICHITOO潮品潮评 时尚达人...</h3>
+<p class="carousel-news-summary">在前不久由时尚女神林依晨和亚洲巨星金汎代言的时尚服饰EICHITOO举行的夏季网络潮品点评活动中，各路时尚达人们相聚EICHITOO官方微博，运用独特的</p>
+         <p>More</p>
+</div>
+</a>
+</div>
+
+<div class="item">
+<a href="newsDetails8">
+<img src="http://www.eichitoo.com/template/eichitoo/protected/images/temp/news-pic8.jpg" alt="" />
+<div class="carousel-caption">
+<span class="carousel-news-data"><b>8</b><sup> /<i>8</i></sup></span>
+<h3 class="carousel-news-title">EICHITOO美妙心情show，缤纷大奖...</h3>
+<p class="carousel-news-summary">在明媚的夏季是否准备和知已好友相约郊外出游？天气带来的好心情，何不打扮得美美出门去晒晒心情，再邀上三五好友出门放飞身心，用相机记录下</p>
+<p>More</p>
+</div>
+</a>
+</div>
+-->
+            <!--div class="item">
+            <img src="protected/images/temp/news-pic2.jpg" alt="" />
+            <div class="carousel-caption">
+              <span class="carousel-news-data"><b>14</b><sup> /<i>9</i></sup></span>
+              <h3 class="carousel-news-title">炫目一“夏”，EICHITOO服饰夏日活动精彩纷呈</h3>
+              <p class="carousel-news-summary">放眼今夏服装市场，品牌多样，款式多变，服装面料更是五花八门，日新月异。但从总体上来呓，雪纺、纯棉、牛仔面料都是今夏主流，大都具有穿着舒适、吸汗透气、触觉柔美等几个特点，十分适合假日、旅途，时尚服饰品牌EICHITOO夏季新品可以说将以上优点一网打尽。</p>
+            </div>
+          </div>   
+          <div class="item">
+            <img src="protected/images/temp/news-pic3.jpg" alt="" />
+            <div class="carousel-caption">
+              <span class="carousel-news-data"><b>14</b><sup> /<i>10</i></sup></span>
+              <h3 class="carousel-news-title">炫目一“夏”，EICHITOO服饰夏日活动精彩纷呈</h3>
+              <p class="carousel-news-summary">放眼今夏服装市场，品牌多样，款式多变，服装面料更是五花八门，日新月异。但从总体上来呓，雪纺、纯棉、牛仔面料都是今夏主流，大都具有穿着舒适、吸汗透气、触觉柔美等几个特点，十分适合假日、旅途，时尚服饰品牌EICHITOO夏季新品可以说将以上优点一网打尽。</p>
+            </div>
+          </div-->
+        </div>
+        <a class="left carousel-control" href="http://www.echtoo.com/#carousel-news" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a> <a class="right carousel-control" href="http://www.echtoo.com/#carousel-news" role="button"
+                data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span
+            class="sr-only">Next</span>
+    </a>
+    </div>
+
+    <div class="newsd">
+        <a href="http://www.echtoo.com/eichitoo/news">/ 查看全部动态 /</a>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact-wrap">
+        <h2 class="title"></h2>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="http://www.echtoo.com/#contant" role="tab" data-toggle="tab">地理位置<span>EICHITOO
+						CONTANT</span></a></li>
+            <li><a href="http://www.echtoo.com/#search" role="tab" data-toggle="tab">门店查询<span>EICHITOO
+						SEACH</span></a></li>
+            <li><a href="http://www.echtoo.com/#merchants" role="tab" data-toggle="tab">招商信息<span>EICHITOO
+						JOIN</span></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="contant">
+                <p class="fs18">江阴爱居兔服装有限公司</p>
+
+                <p class="fs36">全国服务热线：400-8812558</p>
+
+                <p class="fs14">
+                    <span class="glyphicon glyphicon-map-marker"></span><br>地址：江苏省江阴市顾山镇北国海兴路168号
+                </p>
+
+                <p class="fs14">
+                    <span class="glyphicon glyphicon-earphone"></span><br>电话：0510-86999000
+                </p>
+                <!--p class="fs14"><span class="glyphicon glyphicon-envelope"></span><br/>EMAIL：hailan@hailan.com</p-->
+                <p class="padT20">
+                    <span class="glyphicon glyphicon-weixin"></span><span class="glyphicon glyphicon-sina"></span>
+                </p>
+            </div>
+            <div class="tab-pane fade" id="search">
+                <div class="retailstore">
+                    <div class="store-search" id="buyArea">
+                        <ul class="list-unstyled clearfix">
+                            <li>
+                                <div class="input-group">
+                                    <span class="input-group-addon">省份</span>
+
+                                    <div class="sexbox">
+                                        <input type="hidden" name="materia1" value="江苏">
+
+                                        <div class="shtitle lx1" id="fcolor">
+                                            <em>江苏</em>
+
+                                            <div class="selectauto" id="s1"><a href="javascript:void(0)" data-value="重庆"
+                                                                               class="">重庆</a><a
+                                                    href="javascript:void(0)" data-value="河南" class="">河南</a><a
+                                                    href="javascript:void(0)" data-value="云南" class="">云南</a><a
+                                                    href="javascript:void(0)" data-value="山东" class="">山东</a><a
+                                                    href="javascript:void(0)" data-value="江苏" class="cur">江苏</a><a
+                                                    href="javascript:void(0)" data-value="四川" class="">四川</a><a
+                                                    href="javascript:void(0)" data-value="安徽" class="">安徽</a><a
+                                                    href="javascript:void(0)" data-value="河北" class="">河北</a><a
+                                                    href="javascript:void(0)" data-value="甘肃" class="">甘肃</a><a
+                                                    href="javascript:void(0)" data-value="内蒙古" class="">内蒙古</a><a
+                                                    href="javascript:void(0)" data-value="北京" class="">北京</a><a
+                                                    href="javascript:void(0)" data-value="广西" class="">广西</a><a
+                                                    href="javascript:void(0)" data-value="江西" class="">江西</a><a
+                                                    href="javascript:void(0)" data-value="吉林" class="">吉林</a><a
+                                                    href="javascript:void(0)" data-value="湖南" class="">湖南</a><a
+                                                    href="javascript:void(0)" data-value="山西" class="">山西</a><a
+                                                    href="javascript:void(0)" data-value="宁夏" class="">宁夏</a><a
+                                                    href="javascript:void(0)" data-value="陕西" class="">陕西</a><a
+                                                    href="javascript:void(0)" data-value="上海" class="">上海</a><a
+                                                    href="javascript:void(0)" data-value="辽宁" class="">辽宁</a><a
+                                                    href="javascript:void(0)" data-value="天津" class="">天津</a><a
+                                                    href="javascript:void(0)" data-value="湖北" class="">湖北</a><a
+                                                    href="javascript:void(0)" data-value="广东" class="">广东</a><a
+                                                    href="javascript:void(0)" data-value="新疆" class="">新疆</a><a
+                                                    href="javascript:void(0)" data-value="浙江" class="">浙江</a><a
+                                                    href="javascript:void(0)" data-value="贵州" class="">贵州</a><a
+                                                    href="javascript:void(0)" data-value="黑龙江" class="">黑龙江</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <span class="input-group-addon">城市</span>
+
+                                    <div class="sexbox">
+                                        <input type="hidden" name="materia2" value="无锡">
+
+                                        <div class="shtitle lx2">
+                                            <em>无锡</em>
+
+                                            <div class="selectauto" id="s2"><a href="javascript:void(0)" data-value="丹阳"
+                                                                               class="">丹阳</a><a
+                                                    href="javascript:void(0)" data-value="南京" class="">南京</a><a
+                                                    href="javascript:void(0)" data-value="南通" class="">南通</a><a
+                                                    href="javascript:void(0)" data-value="宜兴" class="">宜兴</a><a
+                                                    href="javascript:void(0)" data-value="宿迁" class="">宿迁</a><a
+                                                    href="javascript:void(0)" data-value="常州" class="">常州</a><a
+                                                    href="javascript:void(0)" data-value="徐州" class="">徐州</a><a
+                                                    href="javascript:void(0)" data-value="扬州" class="">扬州</a><a
+                                                    href="javascript:void(0)" data-value="无锡" class="cur">无锡</a><a
+                                                    href="javascript:void(0)" data-value="泰州" class="">泰州</a><a
+                                                    href="javascript:void(0)" data-value="淮安" class="">淮安</a><a
+                                                    href="javascript:void(0)" data-value="盐城" class="">盐城</a><a
+                                                    href="javascript:void(0)" data-value="苏州" class="">苏州</a><a
+                                                    href="javascript:void(0)" data-value="迁市" class="">迁市</a><a
+                                                    href="javascript:void(0)" data-value="连云港" class="">连云港</a><a
+                                                    href="javascript:void(0)" data-value="镇江" class="">镇江</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="store-info" id="storeInfo">
+                        <dl class="store-info-item">
+                            <dt>江苏省江阴市顾山镇北国江阴爱居兔工业园特卖店</dt>
+                            <dd>江苏省江阴市顾山镇北国海兴路68号江阴爱居兔工业园（江阴爱居兔服装有限公司）</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>江苏省江阴市人民中路二店</dt>
+                            <dd>江苏省江阴市人民中路77号</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>江苏省宜兴市丁蜀镇黄龙山街店</dt>
+                            <dd>江苏省无锡市宜兴市丁蜀镇黄龙山街13、15、17、19号房屋一楼</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>江苏省无锡市崇安区广益路店</dt>
+                            <dd>江苏省无锡市崇安区广益289号广益哥伦布11栋101-103、105-110、118-123号商铺</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>江苏省无锡江阴市人民中路店</dt>
+                            <dd>江苏省无锡江阴市人民中路39号</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>江苏省无锡市崇安寺街区箭河街店</dt>
+                            <dd>江苏省无锡市崇安寺街区箭河街1220、1222号</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>江苏省无锡市中山路店</dt>
+                            <dd>江苏省无锡市中山路387号一楼</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>江苏省无锡市崇安区中山路崇安天街商业中心二店</dt>
+                            <dd>江苏省无锡市崇安区中山路崇安天街商业中心</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>江苏省无锡市新区梅村锡义路五洲国际广场店</dt>
+                            <dd>江苏省无锡市新区梅村锡义路与新友路交汇处五洲国际广场（梅村）壹期贰栋壹楼1030-1032、1132-1134号</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>爱居兔总部店</dt>
+                            <dd>江苏省江阴市新桥镇海澜集团（爱居兔总部店）</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>爱居兔总部特卖店</dt>
+                            <dd>江苏省江阴市新桥镇海澜集团（爱居兔总部店）</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>江苏省宜兴市蛟桥河步行街店</dt>
+                            <dd>江苏省宜兴市蛟桥河步行街7号楼一层107号</dd>
+                        </dl>
+                        <dl class="store-info-item">
+                            <dt>江苏省无锡市锡山区锡沪中路易买得特卖店</dt>
+                            <dd>江苏省无锡市锡山区锡沪中路易买得生活购物中心一楼</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="merchants">
+                <div class="merchants-tab">
+                    <ul class="merchants-tab-title pull-left" role="tablist" id="myTab">
+                        <li class="active"><a href="http://www.echtoo.com/#join-condition" role="tab" data-toggle="tab">加盟条件
+                            <small class="text-uppercase">Join
+                                conditions
+                            </small>
+                        </a> <span class="outline-inward"></span>
+
+                            <div>
+                                <i class="merchants-ico icon-join"></i>
+                            </div>
+                        </li>
+                        <li><a href="http://www.echtoo.com/#terms-collaboration" role="tab" data-toggle="tab">合作条款
+                            <small class="text-uppercase">Terms of collaboration</small>
+                        </a><span class="outline-inward"></span>
+
+                            <div>
+                                <i class="merchants-ico icon-term"></i>
+                            </div>
+                        </li>
+                        <li><a href="http://www.echtoo.com/#distribution" role="tab" data-toggle="tab">收益分配及费用的承担
+                            <small class="text-uppercase">Distribution of income and
+                                expenses bear
+                            </small>
+                        </a><span class="outline-inward"></span>
+
+                            <div style="width: 380px;">
+                                <i class="merchants-ico icon-bear"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tab-content merchants-tab-content">
+                        <div class="tab-pane active" id="join-condition">
+                            <p>
+                                <span>加盟商</span>有一定经济实力的完全民事行为能力自然人和在中国境内依法成立的企业法人。“爱居兔”公司授权加盟商不限于在多个城市开设多家“爱居兔特许加盟店”。
+                            </p>
+
+                            <p>
+                                <span>加盟费</span>公司免除加盟商加盟费。
+                            </p>
+
+                            <p>
+                                <span>加盟期限</span>公司本着双赢原则，同加盟商合作每期最低五年，第二期合作续签加盟合同，原加盟商有绝对优先权。
+                            </p>
+
+                            <p>
+                                <span>特许经营货品保证金</span>为保证双方友好长远的合作，加盟商需向公司一次性缴纳伍拾万元的特许经营货品保证金，此保证金于合同期满，所有经济清算、交割结束后，无息退还给加盟商。
+                            </p>
+
+                            <p>
+                                <span>店铺条件</span>公司秉承“黄金地段，钻石商铺”的开店原则。店铺位置为加盟城市的A类商圈，一楼沿街门面，最低实际使用面积120平方米。
+                            </p>
+
+                            <p>
+                                <span>店铺来源</span>由爱居兔公司门店发展部拓展的店铺，加盟商确认。加盟商自带店铺，但须经爱居兔公司考察确认同意。
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="terms-collaboration">
+                            <p>
+                                <span>运营管理</span>为保证与全国连锁的“爱居兔”形象、营运、管理的统一性，加盟店的经营由“爱居兔”总部统一直接管理。
+                            </p>
+
+                            <p>
+                                <span>店铺形象</span>门头吸塑灯箱、厅房形象、道具布置、收银系统、相关设备设施等装修由“爱居兔”总部按全国连锁标准整体策划、统一设计、施工和验收。
+                            </p>
+
+                            <p>
+                                <span>供货方式</span>所有的铺货、补货、换货、退货由“爱居兔”总部负责，加盟商无须带款进货，实行100%退、换货，加盟商货品库存为零。
+                            </p>
+
+                            <p>
+                                <span>店铺工作人员</span>加盟店的管理人员、营业人员由“爱居兔”总部统一招聘、培训、录用和管理。对加盟店人员实行人员培训后方可开业（培训的费用由公司承担，加盟商只承担差旅费），培训地点在公司总部。
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="distribution">
+                            <p>
+                                <span>营业额分配</span>营业额的35％归加盟商，65％归公司。在实际管理中，当天营业额的32％先归加盟商自有，68％汇到公司账户（其中3％由公司作为代扣费用，包括运费、辅料费等，每六个月双方结清一次，多退少补）。
+                            </p>
+
+                            <p>
+                                <span>加盟商费用承担</span>店铺租金、水电物业、装修费用、人员薪资（包括相关社保费用）、运费、辅料费、工商税费等由加盟方自负。签装修合同时预付装修费，决算时多退少补。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobileJoin">
+                    <div class="joinTit">
+                        <i class="merchants-ico icon-join"></i><span>加盟条件<em>JOIN
+                        CONDITIONS</em></span>
+                    </div>
+                    <div class="tab-pane active">
+                        <p>
+                            <span>加盟商</span>有一定经济实力的完全民事行为能力自然人和在中国境内依法成立的企业法人。“爱居兔”公司授权加盟商不限于在多个城市开设多家“爱居兔特许加盟店”。
+                        </p>
+
+                        <p>
+                            <span>加盟费</span>公司免除加盟商加盟费。
+                        </p>
+
+                        <p>
+                            <span>加盟期限</span>公司本着双赢原则，同加盟商合作每期最低五年，第二期合作续签加盟合同，原加盟商有绝对优先权。
+                        </p>
+
+                        <p>
+                            <span>特许经营货品保证金</span>为保证双方友好长远的合作，加盟商需向公司一次性缴纳伍拾万元的特许经营货品保证金，此保证金于合同期满，所有经济清算、交割结束后，无息退还给加盟商。
+                        </p>
+
+                        <p>
+                            <span>店铺条件</span>公司秉承“黄金地段，钻石商铺”的开店原则。店铺位置为加盟城市的A类商圈，一楼沿街门面，最低实际使用面积120平方米。
+                        </p>
+
+                        <p>
+                            <span>店铺来源</span>由爱居兔公司门店发展部拓展的店铺，加盟商确认。加盟商自带店铺，但须经爱居兔公司考察确认同意。
+                        </p>
+
+                    </div>
+                    <div class="joinTit">
+                        <i class="merchants-ico icon-term"></i><span>合作条款<em>TERMS OF
+                        COLLABORATION</em></span>
+                    </div>
+                    <div class="tab-pane active">
+                        <p>
+                            <span>运营管理</span>为保证与全国连锁的“爱居兔”形象、营运、管理的统一性，加盟店的经营由“爱居兔”总部统一直接管理。
+                        </p>
+
+                        <p>
+                            <span>店铺形象</span>门头吸塑灯箱、厅房形象、道具布置、收银系统、相关设备设施等装修由“爱居兔”总部按全国连锁标准整体策划、统一设计、施工和验收。
+                        </p>
+
+                        <p>
+                            <span>供货方式</span>所有的铺货、补货、换货、退货由“爱居兔”总部负责，加盟商无须带款进货，实行100%退、换货，加盟商货品库存为零。
+                        </p>
+
+                        <p>
+                            <span>店铺工作人员</span>加盟店的管理人员、营业人员由“爱居兔”总部统一招聘、培训、录用和管理。对加盟店人员实行人员培训后方可开业（培训的费用由公司承担，加盟商只承担差旅费），培训地点在公司总部。
+                        </p>
+                    </div>
+                    <div class="joinTit">
+                        <i class="merchants-ico icon-bear"></i><span>收益分配及费用的承担<em>DISTRIBUTION
+                        OF INCOME AND EXPENSES BEAR</em></span>
+                    </div>
+                    <div class="tab-pane active">
+                        <p>
+                            <span>营业额分配</span>营业额的35％归加盟商，65％归公司。在实际管理中，当天营业额的32％先归加盟商自有，68％汇到公司账户（其中3％由公司作为代扣费用，包括运费、辅料费等，每六个月双方结清一次，多退少补）。
+                        </p>
+
+                        <p>
+                            <span>加盟商费用承担</span>店铺租金、水电物业、装修费用、人员薪资（包括相关社保费用）、运费、辅料费、工商税费等由加盟方自负。签装修合同时预付装修费，决算时多退少补。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="copyright">
+        <div><a target="_blank" href="http://www.miitbeian.gov.cn/">苏ICP备11032453号</a> <br>© 2006-2014 江阴爱居兔服装有限公司版权所有
+        </div>
+    </div>
+
+</section>
+
+
+<script type="text/javascript" src="protected/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="protected/js/hammer.min.js"></script>
+<script type="text/javascript" src="protected/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="protected/jquery/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="protected/js/sly.min.js"></script>
+<script type="text/javascript" src="protected/js/js.js"></script>
+<script type="text/javascript" src="protected/jquery/jquery.select.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#carousel-banner').hammer().on('swipeleft', function () {
+            $('#carousel-banner').carousel('next');
+        });
+        $('#carousel-banner').hammer().on('swiperight', function () {
+            $('#carousel-banner').carousel('prev');
+        });
+        $('#carousel-news').hammer().on('swipeleft', function () {
+            $('#carousel-news').carousel('next');
+        });
+        $('#carousel-news').hammer().on('swiperight', function () {
+            $('#carousel-news').carousel('prev');
+        });
+    });
+
+    // if(device.ipad() && device.portrait()){
+    //   document.write('<meta name="viewport" content="width=768, user-scalable=no">');
+    // }
+
+
+</script>
+
+</body>
+</html>
